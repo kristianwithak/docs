@@ -1,66 +1,27 @@
 ---
 title: 'Links'
-description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
+description: 'How to add links to your website'
 icon: 'link'
 ---
 
-The navigation menu is the list of links on every website.
+<img
+  className="block"
+  src="/images/link.png"
+  alt="MNPHNC Link form"
+/>
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+Links are a unique kind of content because they're much simpler than other content in MNPHNC.
 
-## Navigation syntax
+Any links you add will be included in the upper right navigation of your site, so really, these are "social media links".
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+Whatever link you create, the appropriate icon for the service will be used. For example, if you create a link to your Instagram account, an Instagram icon will show on your site.
 
-<CodeGroup>
+## Create a New Link
 
-```json Regular Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": ["quickstart"]
-    }
-]
-```
+To create a new link, just click on "Links" in the left-hand menu, in the "Content" area.
 
-```json Nested Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
-            }
-        ]
-    }
-]
-```
+Once you're there, you'll see a button that says "Add Link". Click it, and type in the URL, and hit save.
 
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `mint.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
-
-<Warning>
-
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-
-</Warning>
-
-```json Navigation With Folder
-"navigation": [
-    {
-        "group": "Group Name",
-        "pages": ["your-folder/your-page"]
-    }
-]
-```
-
-## Hidden Pages
-
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+<Note>
+You can reorder links using the arrows on each link to move it either up or down in the list.
+</Note>

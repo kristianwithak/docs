@@ -3,84 +3,43 @@ title: 'FAQs'
 description: 'Frequently Asked Questions'
 ---
 
-## Setup your development
-
-Learn how to update your docs locally and deploy them to the public.
-
-### Edit and preview
+## Frequently Asked Questions
 
 <AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
+  <Accordion title="What is MNPHNC?" icon="page">
+    MNPHNC is the easiest way for bands, musicians, stand-up comics, and artists of all kinds to create a simple website.
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
+  <Accordion title="No, literally, what is 'MNPHNC'?" icon="face-thinking">
+    MNPHNC is pronounced "Monophonic". Monophonic audio is a "single channel" of audio, i.e. it is _not_ stereo. It's a thinly veiled reference to the fact that MNPHNC creates single page websites.
+  </Accordion>
+  <Accordion title="Why choose MNPHNC over other site builders?" icon="ballot-check">
+    Well, you might not! But we have a particular philosophy on how a website should work for musicians:
+    #### It should be as easy and as quick as possible to get your site launched
+    It's possible to create a new website with MNPHNC in less than 10 minutes, seriously.
+    #### It should be as affordable as possible
+    Our monthly plan is \$6.99/month, and the yearly plan is \$69.99/year. Other services cost two and even three times as much, it's a bit silly.
+    #### Your site should do stuff a band needs
+    Some other options offer tons of features that, as a band or artist, you probably will never ever touch.
+
+    Plus, we offer features that other site builders will probably never build for you, because MNPHNC is specifically for artists.
+  </Accordion>
+  <Accordion title="Can I use my own domain?" icon="browser">
+    Yup! And we don't charge extra for it either.
+    
+    Once you create an account, you can go to the "Domains" area and set up your domain for your MNPHNC website. You'll need to create some DNS records to complete the process... if you have questions, check out [this page](/domains/custom-domain).
+  </Accordion>
+  <Accordion title="What happens if I don't have my own domain?" icon="face-fearful">
+    It's not a problem... every new account gets a MNPHNC url right away that looks like this: artistname.mnphnc.com.
+
+    You can use that as long as you want, and you can replace it with a domain you purchase elsewhere any time.
+  </Accordion>
+  <Accordion title="How much does MNPHNC cost?" icon="money-bill">
+    It's \$6.99/month, or you can pay annually to save a few bucks. That's \$69.99/year.
+  </Accordion>
+  <Accordion title="Is there a free trial?" icon="calendar-days">
+    Yup! You get 14 days for free to check things out and see if it works for you.
+  </Accordion>
+  <Accordion title="Why is everything purple?" icon="dove">
+    Purple was good enough for Prince so it's good enough for us.
   </Accordion>
 </AccordionGroup>
-
-### Deploy your changes
-
-<AccordionGroup>
-
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
-
-</AccordionGroup>
-
-## Update your docs
-
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
-
-<CardGroup>
-
-<Card title="Style Your Docs" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-<Card
-  title="Add API Endpoints"
-  icon="square-code"
-  href="/api-playground/configuration"
->
-  Implement your OpenAPI spec and enable API user interaction.
-</Card>
-
-<Card
-  title="Integrate Analytics"
-  icon="chart-mixed"
-  href="/analytics/supported-integrations"
->
-  Draw insights from user interactions with your documentation.
-</Card>
-
-<Card
-  title="Host on a Custom Domain"
-  icon="browser"
-  href="/settings/custom-domain/subdomain"
->
-  Keep your docs on your own website's subdomain.
-</Card>
-
-</CardGroup>

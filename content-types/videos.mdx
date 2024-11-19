@@ -1,59 +1,34 @@
 ---
 title: 'Videos'
-description: 'Add image, video, and other HTML elements'
+description: 'How to add and manage videos in MNPHNC'
 icon: 'film'
 ---
 
 <img
-  style={{ borderRadius: '0.5rem' }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
+  className="block"
+  src="/images/video.png"
+  alt="MNPHNC Video form"
 />
 
-## Image
+## Create a New Video
 
-### Using Markdown
+To create a new video, just click on "Videos" in the left-hand menu, in the "Content" area.
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+Once you're there, you'll see a button that says "Add Video". Click it and fill out the form that appears.
 
-```md
-![title](/path/image.jpg)
-```
+<Note>
+Remember that when you add a Video, you're just adding it to your "inventory" of stuff to include in your website. It won't actually be visible on the site until you decide to add or edit a "Section" that actually uses the Video!
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+This is helpful, for example, if you want to add a video that hasn't been released yet, so you can get that work out of the way.
+</Note>
 
-### Using Embeds
+## Video Fields
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
+Here is a list of the fields you can add for a Video:
 
-```html
-<img height="200" src="/path/image.jpg" />
-```
+| Field Name | Description |
+| :---------- | :----------- |
+| `Video Title` | This is the name of the video. |
+| `Youtube Url` | A YouTube link to the video on YouTube. |
 
-## Embeds and HTML elements
-
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
-
-<br />
-
-<Tip>
-
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
-
-</Tip>
-
-### iFrames
-
-Loads another HTML page within the document. Most commonly used for embedding videos.
-
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
-```
+<Warning>For now, we only support YouTube Urls, which automatically become embedded YouTube players in the website. But we're adding support for more options soon! Message us at support@mnphnc.com if there's a video you service you want us to support!</Warning>
