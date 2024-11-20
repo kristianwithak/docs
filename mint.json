@@ -50,6 +50,7 @@
     {
       "group": "Section Types",
       "pages": [
+        "sections/whats-a-section",
         "sections/track-section",
         "sections/video-section",
         "sections/shows-section",
